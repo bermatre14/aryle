@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page with Cloudflare Turnstile CAPTCHA</title>
+    <!-- Script to load the Cloudflare Turnstile CAPTCHA -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <style>
+        /* Center the content of the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .large-text {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Text before CAPTCHA with enlarged font size -->
+        <p class="large-text">Confirm that you are a human by completing the action below.</p>
+        <!-- Container for the CAPTCHA -->
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAAbMV7h1Vna3ZbCr" data-callback="captchaCallback"></div>
+        <br/>
+        <!-- Text after CAPTCHA (optional, if needed) -->
+        <p id="postCaptchaText" style="display:none;">Thank you for confirming you are a human.</p>
+    </div>
+    <!-- Script to handle the CAPTCHA callback and redirection -->
+    <script>
+        function captchaCallback(token) {
+            // Redirect to the main page of the site once the CAPTCHA is validated
+            window.location.href = 'allo.html'; // Replace 'main.html' with the URL of your main page
+        }
+    </script>
+</body>
+</html>
