@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:og="http://ogp.me/ns#">
+    
+<!-- Mirrored from rugbyaucoeur.fr/mecene/30 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Oct 2023 09:44:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+          
+
+<link rel="icon" href="../favicon/32.png" sizes="32x32">
+<link rel="icon" href="../favicon/192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="../favicon/180.png">
+<meta name="msapplication-TileImage" content="../favicon/270.png">
+
+<meta charset="UTF-8" lang="fr">
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://rugbyaucoeur.fr/mecene/30" />
+<meta property="og:url" content="https://rugbyaucoeur.fr/mecene/30">
+
+<title>Rugby au Cœur</title>
+
+<meta property="og:site_name" content="Rugby au Cœur">
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://rugbyaucoeur.fr/logo.jpg" />
+<meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="og:title" content="Rugby au Cœur">
+    <meta property="twitter:title" content="Rugby au Cœur" />
+
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta name="description" content="L&#039;ambition sociale de Rugby au Cœur est de permettre à chacun d&#039;œuvrer à des projets chers à la Coupe du Monde de Rugby 2023, à forte valeur sociale ajoutée, au cœur des territoires.">
+    <meta property="og:description" content="L&#039;ambition sociale de Rugby au Cœur est de permettre à chacun d&#039;œuvrer à des projets chers à la Coupe du Monde de Rugby 2023, à forte valeur sociale ajoutée, au cœur des territoires.">
+    <meta property="twitter:description" content="L&#039;ambition sociale de Rugby au Cœur est de permettre à chacun d&#039;œuvrer à des projets chers à la Coupe du Monde de Rugby 2023, à forte valeur sociale ajoutée, au cœur des territoires." />
+    <meta property="st:section" content="L&#039;ambition sociale de Rugby au Cœur est de permettre à chacun d&#039;œuvrer à des projets chers à la Coupe du Monde de Rugby 2023, à forte valeur sociale ajoutée, au cœur des territoires."/>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155730545-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-155730545-1');
+  </script>
+
+
+                                    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://rugbyaucoeur.fr/css/normalize.css" rel="stylesheet" type="text/css" />
+        <link href="https://rugbyaucoeur.fr/css/icomoon/icomoon.css" rel="stylesheet" type="text/css" />
+        <link href="https://rugbyaucoeur.fr/css/main.css" rel="stylesheet" type="text/css" />
+
+                <script>
+
+    var DEPENDENCIES_LOADED = {
+        "libraries" : {},
+        "loaded" : [],
+    };
+ 
+    function loadDynamicLibraries(libraries, functionName = null, id = null) {
+
+        // Wait for all initial scripts to load (jquery etc...)
+        if( document.readyState !== 'loading' ) {
+            loadLibraries();
+        } else {
+            document.addEventListener('DOMContentLoaded', function () {
+                loadLibraries();
+            });
+        }
+
+        // Load the requested libraries if not loaded yet
+        function loadLibraries() {
+
+            var allHasLoaded = true;
+
+            for( var i=0; i<libraries.length; i++) {
+
+                var path = libraries[i];
+                var ext = path.split('.').pop();
+
+                if( !DEPENDENCIES_LOADED.libraries.hasOwnProperty(path) ) {
+                    
+                    // First library request
+
+                    allHasLoaded = false;
+
+                    // Create the library el
+                    if( ext == "js" ) {
+
+                        var el = document.createElement("script");
+                        el.src = path;
+                        document.body.appendChild(el);
+
+                    } else if( ext == "css" ) {
+
+                        var el = document.createElement("link");
+                        el.rel = "stylesheet";
+                        el.href = path;
+                        document.head.appendChild(el);
+
+                    } else continue;
+
+                    DEPENDENCIES_LOADED.libraries[path] = el;
+                    
+                    // Add a load event to trigger the function while loaded, and to store that the el is loaded
+                    addLoadEvent(el, path);
+
+                } else if ( DEPENDENCIES_LOADED.loaded.indexOf(path) === -1 ) {
+
+                    // Library already requested but not loaded yet
+                    // Add another loadEvent to the library el to trigger the function while loaded
+                    allHasLoaded = false;
+                    addWaitingLoadEvent(DEPENDENCIES_LOADED.libraries[path]);
+
+                }
+
+            }
+
+            // If all the libraries has loaded, trigger the function associated
+            if(allHasLoaded) triggerFunction();
+
+        }
+
+        function addLoadEvent(el, path) {
+
+            el.addEventListener('load', function (e){
+                DEPENDENCIES_LOADED.loaded.push(path);
+                triggerFunction();
+            });
+
+        }
+
+        function addWaitingLoadEvent(el) {
+
+            el.addEventListener('load', function (e){
+                triggerFunction();
+            });
+
+        }
+
+        function triggerFunction() {
+
+            // This is only necessary if the trigger of a function is expected
+            if(!functionName) return;
+
+            // Check if all requested elements is loaded
+            var loaded = true;
+            for( var i=0; i<libraries.length; i++) {
+                if( DEPENDENCIES_LOADED.loaded.indexOf(libraries[i]) === -1 ) {
+                    loaded = false;
+                    break;
+                }
+            }
+
+            // If all is loaded, trigger the function with the id of the current DOM Element as an arg
+            if(loaded) {
+                var func = function(){ eval(functionName)( id ); };
+                func();
+            }
+
+        }
+
+    }
+
+</script>        
+    </head>
+    <body>
+
+        <main>
+
+            <div id="top-bar">
+
+    <div class="logo"><a href="https://rugbyaucoeur.fr/"><img  src="https://rugbyaucoeur.fr/img/RUGBYCOEUR_LOGO_LIN_SC_WHITE_RGB.png"></a></div>
+    <div  class="logo2"><img src="https://rugbyaucoeur.fr/img/RUGBYCOEUR_Header.png"></div>
+
+</div>
+
+<div id="navbar">
+
+    <nav class="nav-menu">
+
+        <div class="nav-wrapper">
+			<a href="https://rugbyaucoeur.fr/" class="brand-logo"><img src="https://rugbyaucoeur.fr/img/logo-colored.png"></a>
+			<a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          	<ul id="nav-mobile" class="hide-on-med-and-down">
+			  
+				
+					
+										
+					<li>
+						<a class="" href="https://rugbyaucoeur.fr/"  >Accueil</a>
+					</li>
+
+				
+					
+										
+					<li>
+						<a class="" href="https://rugbyaucoeur.fr/ladn-de-rugby-au-coeur"  >L&#039;ADN de Rugby au Cœur</a>
+					</li>
+
+				
+					
+																					
+					<li>
+						<a class="dropdown-trigger" href="#"  data-target='dropdown-navbar-3'>Projets</a>
+					</li>
+
+				
+					
+																					
+					<li>
+						<a class="dropdown-trigger" href="#"  data-target='dropdown-navbar-4'>Mécènes</a>
+					</li>
+
+				
+					
+										
+					<li>
+						<a class="" href="https://rugbyaucoeur.fr/nos-actualites"  >Nos actualités</a>
+					</li>
+
+				
+					
+										
+					<li>
+						<a class="" href="https://rugbyaucoeur.fr/don"  >Faire un don</a>
+					</li>
+
+				          	</ul>
+        </div>
+
+															
+				<ul id='dropdown-navbar-3' class='dropdown-content'>
+											<li>
+							<a href="https://rugbyaucoeur.fr/deposer-un-projet" >Déposer un projet</a>
+						</li>
+											<li>
+							<a href="https://rugbyaucoeur.fr/projets" >Liste des projets</a>
+						</li>
+									</ul>
+
+								
+				<ul id='dropdown-navbar-4' class='dropdown-content'>
+											<li>
+							<a href="https://rugbyaucoeur.fr/devenir-mecene" >Devenir mécène</a>
+						</li>
+											<li>
+							<a href="https://rugbyaucoeur.fr/mecenes" >Liste des mécènes</a>
+						</li>
+									</ul>
+
+															
+    </nav>
+
+</div>
+
+<ul class="sidenav" id="mobile-sidenav">
+
+	<div class="sidenav-actions">
+		<button class="circle-cta circle-cta-rose circle-cta-no-borders sidenav-close"><i class="icon-close"></i></button></div>
+	</div>
+
+	
+		
+			<li><a href="https://rugbyaucoeur.fr/" >Accueil</a></li>
+
+		
+	
+		
+			<li><a href="https://rugbyaucoeur.fr/ladn-de-rugby-au-coeur" >L&#039;ADN de Rugby au Cœur</a></li>
+
+		
+	
+		
+			<li class="no-padding">
+				<ul class="collapsible collapsible-accordion">
+					<li>
+						<a class="collapsible-header">Projets<i class="material-icons right">arrow_drop_down</i></a>
+						<div class="collapsible-body">
+							<ul>
+																	<li><a href="https://rugbyaucoeur.fr/deposer-un-projet" >Déposer un projet</a></li>
+																	<li><a href="https://rugbyaucoeur.fr/projets" >Liste des projets</a></li>
+															</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+
+		
+	
+		
+			<li class="no-padding">
+				<ul class="collapsible collapsible-accordion">
+					<li>
+						<a class="collapsible-header">Mécènes<i class="material-icons right">arrow_drop_down</i></a>
+						<div class="collapsible-body">
+							<ul>
+																	<li><a href="https://rugbyaucoeur.fr/devenir-mecene" >Devenir mécène</a></li>
+																	<li><a href="https://rugbyaucoeur.fr/mecenes" >Liste des mécènes</a></li>
+															</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+
+		
+	
+		
+			<li><a href="https://rugbyaucoeur.fr/nos-actualites" >Nos actualités</a></li>
+
+		
+	
+		
+			<li><a href="https://rugbyaucoeur.fr/don" >Faire un don</a></li>
+
+		
+	    
+</ul>
+
+            
+            
+    <div class="has-pink-sidebar">
+
+        <nav id="nav-breadcrumb">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <a href="https://rugbyaucoeur.fr/" class="breadcrumb">Accueil</a>
+                            <a href="https://rugbyaucoeur.fr/mecenes" class="breadcrumb">Nos mécènes</a>
+                            <span class="breadcrumb">Randstad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="post-wrapper">
+            <div class="container "><div class="row"><div class="col s12 l12" style="text-align: center;"><img src="https://rugbyaucoeur.fr/uploads/images/rugbycoeur-member-platinium-randstad-629e1a03c6831766546477.png" alt="" data-filename="RUGBYCOEUR_MEMBER_PLATINIUM_RANDSTAD.png" style="width: 56.6921%; height: auto;"></div></div></div><div class="container "><div class="row"><div class="col s12 l12"><h3>Le Groupe Randstad s'engage dans le sport et particulièrement dans le rugby pour favoriser l'emploi dans les territoires</h3></div></div></div><div class="container "><div class="row"><div class="col s12 l12" style="text-align: justify;"><p>Un fort engagement sportif</p><p>À travers cet engagement, Randstad aspire à utiliser le sport comme vecteur d'inclusion et ainsi mettre son expertise au service des organisations sportives afin de les soutenir et de les accompagner dans leur développement professionnel et sportif !
+
+Associer emploi et sport va de soi. Ces domaines ont en commun des valeurs fortes comme l’engagement, le dépassement de soi, l’esprit de groupe ou la capacité de résilience qui est si importante aujourd’hui pour aborder sereinement le monde du travail de demain. </p><p>Une présence dans le rugby sur tout le territoire</p><p>Randstad est actuellement présent sur de nombreux clubs de rugby de TOP 14 et possède un attachement fort aux valeurs portées par ce sport, que ce soit l’intégrité, la passion, la solidarité, la discipline et le respect. Cela est en totale cohérence avec l’ADN du Groupe. <br></p></div></div></div><div class="container "><div class="row"><div class="col s12 l12"><h3>Randstad s'engage pour le collectif</h3></div></div></div><div class="container "><div class="row"><div class="col s12 l12" style="text-align: justify;"><p>Randstad s’appuie également sur le vecteur du sport pour renforcer les actions menées par son Institut en faveur des personnes les plus éloignées de l’emploi. En effet, accompagner vers l’emploi les publics les plus fragiles est aussi l’une des missions de Randstad. Là encore, la similitude avec le formidable vecteur d’inclusion qu’est le sport est une évidence.</p><p>Le Groupe s’appuie alors sur des partenariats solidaires qui ont pour objectif de sensibiliser les citoyens à la grande précarité et d'encourager l’inclusion. Randstad souhaite laisser la chance à ces personnes de bénéficier du savoir-faire du leader mondial des services en ressources humaines.</p></div></div></div><div class="container "><div class="row"><div class="col s12 l12"><h3>Randstad et Rugby au Cœur </h3></div></div></div><div class="container "><div class="row"><div class="col s12 l12"><p>Pour le Groupe Randstad, être mécène du Fonds de dotation Rugby au Cœur, c'est soutenir des projets à forte ambition sociale sur tout le territoire qui favorisent l’inclusion, l’insertion et l’équité à travers le rugby.</p></div></div></div>
+        </div>
+
+    </div>
+
+
+        </main>
+
+        <a href="mailto:contact@rugbyaucoeur.fr" id="fixed-email" class="fixed-email-hidden"><i class="material-icons">email</i><span>contact@rugbyaucoeur.fr</span></a>
+            
+        <footer id="footer" class="page-footer">
+  <div class="container">
+    <div class="row footer-logos">
+      <div class="col s12 l4 footer-logo">
+        <img src="https://rugbyaucoeur.fr/img/RUGBYCOEUR_LOGO_STA_SC_WHITE_RGB.png" />
+      </div>
+      <div class="col s12 l8 footer-logo2">
+        <img src="https://rugbyaucoeur.fr/img/RUGBYCOEUR_Header.png" />
+      </div>
+    </div>
+
+    <div class="row footer-actions">
+      <div class="col s12">
+        <div class="footer-actions-title">Une question ?</div>
+        <div>
+          <a href="https://rugbyaucoeur.fr/faq" class="btn btn-transparent btn-large">Voir la faq</a>
+          <a href="mailto:contact@rugbyaucoeur.fr" class="btn btn-light btn-large">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col l4 s12"><div class="menu-title">À propos</div>
+<ul class="menu">
+            <li><a href="https://rugbyaucoeur.fr/" >Accueil</a></li>
+            <li><a href="https://rugbyaucoeur.fr/ladn-de-rugby-au-coeur" >L&#039;ADN de Rugby au Cœur</a></li>
+            <li><a href="https://rugbyaucoeur.fr/nos-actualites" >Nos actualités</a></li>
+            <li><a href="https://rugbyaucoeur.fr/mentions-legales" target="_blank">Mentions légales</a></li>
+            <li><a href="https://rugbyaucoeur.fr/reglement-jeu-concours" target="_blank">Règlement</a></li>
+    </ul></div>
+
+      <div class="col l4 s12"><div class="menu-title">La plateforme</div>
+<ul class="menu">
+            <li><a href="https://rugbyaucoeur.fr/deposer-un-projet" >Déposer un projet</a></li>
+            <li><a href="https://rugbyaucoeur.fr/projets" >Liste des projets</a></li>
+            <li><a href="https://rugbyaucoeur.fr/devenir-mecene" >Devenir mécène</a></li>
+            <li><a href="https://rugbyaucoeur.fr/mecenes" >Liste des mécènes</a></li>
+            <li><a href="https://rugbyaucoeur.fr/don" >Faire un don</a></li>
+    </ul></div>
+
+      <div class="col xl4 s12 footer-infos">
+        <div>
+          Le site <a href="#">www.rugbyaucoeur.fr</a> est édité par le Fonds de dotation Rugby au Cœur
+        </div>
+        <div>
+          <br />24 rue Saint Victor
+        </div>
+        <div>75005 Paris, FRANCE</div>
+        <div>
+          <a href="mailto:contact@rugbyaucoeur.fr"><b>contact@rugbyaucoeur.fr</b></a>
+        </div>
+        <div>
+          <br />Directeur de la Publication :
+        </div>
+        <div>M. Julien COLLETTE</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">© 2023 Rugby au Cœur</div>
+  </div>
+</footer>
+
+        <div class="cookie-hidden" id="cookie-banner">
+    <div>
+         <span>Ce site utilise des cookies afin d'améliorer votre expérience utilisateur. En continuant, vous acceptez l'utilisation de cookies.</span>
+         <i id="consent-cookies" class="icon-close"></i>
+    </div>
+</div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://rugbyaucoeur.fr/js/main.js"></script>
+        
+    </body>
+
+<!-- Mirrored from rugbyaucoeur.fr/mecene/30 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Oct 2023 09:44:07 GMT -->
+</html>

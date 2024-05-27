@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:og="http://ogp.me/ns#">
+    
+<!-- Mirrored from rugbyaucoeur.fr/mecenes by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Oct 2023 09:44:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+          
+
+<link rel="icon" href="favicon/32.png" sizes="32x32">
+<link rel="icon" href="favicon/192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="favicon/180.png">
+<meta name="msapplication-TileImage" content="favicon/270.png">
+
+<meta charset="UTF-8" lang="fr">
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="mecenes.html" />
+<meta property="og:url" content="mecenes.html">
+
+<title>Rugby au Cœur | Nos mécènes</title>
+
+<meta property="og:site_name" content="Rugby au Cœur">
+<meta property="og:type" content="website" />
+<meta property="og:image" content="logo.jpg" />
+<meta property="twitter:card" content="summary_large_image"/>
+
+    <meta property="og:title" content="Rugby au Cœur | Nos mécènes">
+    <meta property="twitter:title" content="Rugby au Cœur | Nos mécènes" />
+
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta name="description" content="L&#039;ambition sociale de Rugby au Cœur est de permettre à chacun d&#039;œuvrer à des projets chers à la Coupe du Monde de Rugby 2023, à forte valeur sociale ajoutée, au cœur des territoires.">
+    <meta property="og:description" content="L&#039;ambition sociale de Rugby au Cœur est de permettre à chacun d&#039;œuvrer à des projets chers à la Coupe du Monde de Rugby 2023, à forte valeur sociale ajoutée, au cœur des territoires.">
+    <meta property="twitter:description" content="L&#039;ambition sociale de Rugby au Cœur est de permettre à chacun d&#039;œuvrer à des projets chers à la Coupe du Monde de Rugby 2023, à forte valeur sociale ajoutée, au cœur des territoires." />
+    <meta property="st:section" content="L&#039;ambition sociale de Rugby au Cœur est de permettre à chacun d&#039;œuvrer à des projets chers à la Coupe du Monde de Rugby 2023, à forte valeur sociale ajoutée, au cœur des territoires."/>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155730545-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-155730545-1');
+  </script>
+
+
+                                    
+        <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+        <link href="css/icomoon/icomoon.css" rel="stylesheet" type="text/css" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+                <script>
+
+    var DEPENDENCIES_LOADED = {
+        "libraries" : {},
+        "loaded" : [],
+    };
+ 
+    function loadDynamicLibraries(libraries, functionName = null, id = null) {
+
+        // Wait for all initial scripts to load (jquery etc...)
+        if( document.readyState !== 'loading' ) {
+            loadLibraries();
+        } else {
+            document.addEventListener('DOMContentLoaded', function () {
+                loadLibraries();
+            });
+        }
+
+        // Load the requested libraries if not loaded yet
+        function loadLibraries() {
+
+            var allHasLoaded = true;
+
+            for( var i=0; i<libraries.length; i++) {
+
+                var path = libraries[i];
+                var ext = path.split('.').pop();
+
+                if( !DEPENDENCIES_LOADED.libraries.hasOwnProperty(path) ) {
+                    
+                    // First library request
+
+                    allHasLoaded = false;
+
+                    // Create the library el
+                    if( ext == "js" ) {
+
+                        var el = document.createElement("script");
+                        el.src = path;
+                        document.body.appendChild(el);
+
+                    } else if( ext == "css" ) {
+
+                        var el = document.createElement("link");
+                        el.rel = "stylesheet";
+                        el.href = path;
+                        document.head.appendChild(el);
+
+                    } else continue;
+
+                    DEPENDENCIES_LOADED.libraries[path] = el;
+                    
+                    // Add a load event to trigger the function while loaded, and to store that the el is loaded
+                    addLoadEvent(el, path);
+
+                } else if ( DEPENDENCIES_LOADED.loaded.indexOf(path) === -1 ) {
+
+                    // Library already requested but not loaded yet
+                    // Add another loadEvent to the library el to trigger the function while loaded
+                    allHasLoaded = false;
+                    addWaitingLoadEvent(DEPENDENCIES_LOADED.libraries[path]);
+
+                }
+
+            }
+
+            // If all the libraries has loaded, trigger the function associated
+            if(allHasLoaded) triggerFunction();
+
+        }
+
+        function addLoadEvent(el, path) {
+
+            el.addEventListener('load', function (e){
+                DEPENDENCIES_LOADED.loaded.push(path);
+                triggerFunction();
+            });
+
+        }
+
+        function addWaitingLoadEvent(el) {
+
+            el.addEventListener('load', function (e){
+                triggerFunction();
+            });
+
+        }
+
+        function triggerFunction() {
+
+            // This is only necessary if the trigger of a function is expected
+            if(!functionName) return;
+
+            // Check if all requested elements is loaded
+            var loaded = true;
+            for( var i=0; i<libraries.length; i++) {
+                if( DEPENDENCIES_LOADED.loaded.indexOf(libraries[i]) === -1 ) {
+                    loaded = false;
+                    break;
+                }
+            }
+
+            // If all is loaded, trigger the function with the id of the current DOM Element as an arg
+            if(loaded) {
+                var func = function(){ eval(functionName)( id ); };
+                func();
+            }
+
+        }
+
+    }
+
+</script>        
+    </head>
+    <body>
+
+        <main>
+
+            <div id="top-bar">
+
+    <div class="logo"><a href="index.html"><img  src="img/RUGBYCOEUR_LOGO_LIN_SC_WHITE_RGB.png"></a></div>
+    <div  class="logo2"><img src="img/RUGBYCOEUR_Header.png"></div>
+
+</div>
+
+<div id="navbar">
+
+    <nav class="nav-menu">
+
+        <div class="nav-wrapper">
+			<a href="index.html" class="brand-logo"><img src="img/logo-colored.png"></a>
+			<a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          	<ul id="nav-mobile" class="hide-on-med-and-down">
+			  
+				
+					
+										
+					<li>
+						<a class="" href="index.html"  >Accueil</a>
+					</li>
+
+				
+					
+										
+					<li>
+						<a class="" href="ladn-de-rugby-au-coeur.html"  >L&#039;ADN de Rugby au Cœur</a>
+					</li>
+
+				
+					
+																					
+					<li>
+						<a class="dropdown-trigger" href="#"  data-target='dropdown-navbar-3'>Projets</a>
+					</li>
+
+				
+					
+																					
+					<li>
+						<a class="dropdown-trigger" href="#"  data-target='dropdown-navbar-4'>Mécènes</a>
+					</li>
+
+				
+					
+										
+					<li>
+						<a class="" href="nos-actualites.html"  >Nos actualités</a>
+					</li>
+
+				
+					
+										
+					<li>
+						<a class="" href="don.html"  >Faire un don</a>
+					</li>
+
+				          	</ul>
+        </div>
+
+															
+				<ul id='dropdown-navbar-3' class='dropdown-content'>
+											<li>
+							<a href="deposer-un-projet.html" >Déposer un projet</a>
+						</li>
+											<li>
+							<a href="projets.html" >Liste des projets</a>
+						</li>
+									</ul>
+
+								
+				<ul id='dropdown-navbar-4' class='dropdown-content'>
+											<li>
+							<a href="devenir-mecene.html" >Devenir mécène</a>
+						</li>
+											<li>
+							<a href="mecenes.html" >Liste des mécènes</a>
+						</li>
+									</ul>
+
+															
+    </nav>
+
+</div>
+
+<ul class="sidenav" id="mobile-sidenav">
+
+	<div class="sidenav-actions">
+		<button class="circle-cta circle-cta-rose circle-cta-no-borders sidenav-close"><i class="icon-close"></i></button></div>
+	</div>
+
+	
+		
+			<li><a href="index.html" >Accueil</a></li>
+
+		
+	
+		
+			<li><a href="ladn-de-rugby-au-coeur.html" >L&#039;ADN de Rugby au Cœur</a></li>
+
+		
+	
+		
+			<li class="no-padding">
+				<ul class="collapsible collapsible-accordion">
+					<li>
+						<a class="collapsible-header">Projets<i class="material-icons right">arrow_drop_down</i></a>
+						<div class="collapsible-body">
+							<ul>
+																	<li><a href="deposer-un-projet.html" >Déposer un projet</a></li>
+																	<li><a href="projets.html" >Liste des projets</a></li>
+															</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+
+		
+	
+		
+			<li class="no-padding">
+				<ul class="collapsible collapsible-accordion">
+					<li>
+						<a class="collapsible-header">Mécènes<i class="material-icons right">arrow_drop_down</i></a>
+						<div class="collapsible-body">
+							<ul>
+																	<li><a href="devenir-mecene.html" >Devenir mécène</a></li>
+																	<li><a href="mecenes.html" >Liste des mécènes</a></li>
+															</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+
+		
+	
+		
+			<li><a href="nos-actualites.html" >Nos actualités</a></li>
+
+		
+	
+		
+			<li><a href="don.html" >Faire un don</a></li>
+
+		
+	    
+</ul>
+
+            
+            
+    <div class="has-pink-sidebar">
+
+        <nav id="nav-breadcrumb">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <a href="index.html" class="breadcrumb">Accueil</a>
+                            <span class="breadcrumb">Nos mécènes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">    
+                <h1 class="page-title">Nos mécènes</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">Ils ont transformé l’essai ! Venez découvrir nos généreux mécènes, leur ADN et leur engagement.</div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="ribbon-title ribbon-large"><i class="icon-trophy"></i>Mécènes platinium</h2>
+                </div>
+            </div>
+
+            
+
+            
+<div class="mecene-platinium-wrapper">
+
+    
+            <div class="bloc-mecene-platinium">
+
+                <a href="mecene/1.html">
+                    <div class="mecene-platinium-img"><img src="uploads/images/sncf-white-605b48f69e05a541241126.jpg" alt="sncf-white-605b48f69e05a541241126.jpg"/></div>
+                                    </a>
+                
+            </div>
+
+    
+            <div class="bloc-mecene-platinium">
+
+                <a href="mecene/30.html">
+                    <div class="mecene-platinium-img"><img src="uploads/images/randstad-logo-redimensionne-6298816b1afde934233930.png" alt="randstad-logo-redimensionne-6298816b1afde934233930.png"/></div>
+                                    </a>
+                
+            </div>
+
+    
+            <div class="bloc-mecene-platinium">
+
+                <a href="mecene/2.html">
+                    <div class="mecene-platinium-img"><img src="uploads/images/gmf-605b493eace94216354651.jpg" alt="gmf-605b493eace94216354651.jpg"/></div>
+                                    </a>
+                
+            </div>
+
+    
+            <div class="bloc-mecene-platinium">
+
+                <a href="mecene/32.html">
+                    <div class="mecene-platinium-img"><img src="uploads/images/mitsubishi-logo-redimensionne-6298826794af5999652254.png" alt="mitsubishi-logo-redimensionne-6298826794af5999652254.png"/></div>
+                                    </a>
+                
+            </div>
+
+    
+</div>
+
+
+<div class="mecene-platinium-wrapper">
+
+    
+</div>
+
+
+<div class="mecene-platinium-wrapper">
+
+    
+</div>
+
+
+<div class="mecene-platinium-wrapper">
+
+    
+</div>
+
+
+<div class="mecene-platinium-wrapper">
+
+    
+</div>
+
+
+<div class="mecene-platinium-wrapper">
+
+    
+            <div class="bloc-mecene-platinium">
+
+                <a href="mecene/3.html">
+                    <div class="mecene-platinium-img"><img src="uploads/images/alcyaconseil-605b494cc88a7102684148.png" alt="alcyaconseil-605b494cc88a7102684148.png"/></div>
+                                    </a>
+                
+            </div>
+
+    
+            <div class="bloc-mecene-platinium">
+
+                <a href="mecene/31.html">
+                    <div class="mecene-platinium-img"><img src="uploads/images/datashake-logo-redimensionne-629881e2dddd3836544248.png" alt="datashake-logo-redimensionne-629881e2dddd3836544248.png"/></div>
+                                    </a>
+                
+            </div>
+
+    
+</div>
+
+
+<div class="mecene-platinium-wrapper">
+
+    
+</div>
+
+
+<div class="mecene-platinium-wrapper">
+
+    
+</div>
+
+
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="ribbon-title ribbon-large"><i class="icon-trophy"></i>Mécènes gold</h2>
+                </div>
+            </div>
+            
+            <div id="mecene-gold" class="mecene-platinium-wrapper">
+
+            
+                <div class="bloc-mecene-platinium bloc-mecene-gold">
+
+                    <a class="modal-trigger" href="#modal-mecene-gold" data-target-slide="1" data-target-infos="" data-target-description="" data-target-name="WMH Project">
+                        <div class="mecene-platinium-img"><img src="uploads/images/fc2-605b536a5da65950694199.png" alt="fc2-605b536a5da65950694199.png"/></div>
+                                            </a>
+                    
+                </div>
+
+        
+                <div class="bloc-mecene-platinium bloc-mecene-gold">
+
+                    <a class="modal-trigger" href="#modal-mecene-gold" data-target-slide="2" data-target-infos="" data-target-description="&lt;div&gt;En France et dans le monde, nos équipes créent, construisent et rénovent les infrastructures et les bâtiments au service des territoires. &lt;strong&gt;Forts de leurs expertises&lt;/strong&gt; et de &lt;strong&gt;leur capacité à travailler ensemble&lt;/strong&gt;, les &lt;strong&gt;11 000 &lt;/strong&gt;hommes et femmes de NGE abordent et anticipent les mutations de leurs métiers avec &lt;strong&gt;confiance&lt;/strong&gt; en étant au plus près des clients.&lt;br&gt;Avec un &lt;strong&gt;chiffre d&#039;affaires de 2 Md€, &lt;/strong&gt;NGE est une &lt;strong&gt;entreprise&lt;/strong&gt; française &lt;strong&gt;indépendante&lt;/strong&gt; qui se développe &lt;strong&gt;autour des métiers du BTP &lt;/strong&gt;et participe à la &lt;strong&gt;construction des grandes infrastructures &lt;/strong&gt;et à des &lt;strong&gt;projets urbains &lt;/strong&gt;ou de &lt;strong&gt;proximité&lt;/strong&gt;.&lt;/div&gt;" data-target-name="NGE">
+                        <div class="mecene-platinium-img"><img src="uploads/images/2019-09-logo-nge-1-605b538dde4a9258500512.png" alt="2019-09-logo-nge-1-605b538dde4a9258500512.png"/></div>
+                                            </a>
+                    
+                </div>
+
+        
+                <div class="bloc-mecene-platinium bloc-mecene-gold">
+
+                    <a class="modal-trigger" href="#modal-mecene-gold" data-target-slide="3" data-target-infos="" data-target-description="&lt;div&gt;PGS Group est la spécialiste des solutions pour le transport, la logistique, l’emballage et le stockage de vos produits. Leader de la palette bois en France et n°2 en Europe, PGS Group, c’est 42 sites répartis dans 6 pays et disposant d’une capacité annuelle de production et de réparation de 45 000 000 de palettes.&lt;/div&gt;" data-target-name="PGS">
+                        <div class="mecene-platinium-img"><img src="uploads/images/2019-08-logo-pgs-605b53a14a87f604657442.png" alt="2019-08-logo-pgs-605b53a14a87f604657442.png"/></div>
+                                            </a>
+                    
+                </div>
+
+        
+                <div class="bloc-mecene-platinium bloc-mecene-gold">
+
+                    <a class="modal-trigger" href="#modal-mecene-gold" data-target-slide="4" data-target-infos="" data-target-description="" data-target-name="Cardinal">
+                        <div class="mecene-platinium-img"><img src="uploads/images/logo-cardinal-606727f6d8d5b657442934.png" alt="logo-cardinal-606727f6d8d5b657442934.png"/></div>
+                                            </a>
+                    
+                </div>
+
+        
+                <div class="bloc-mecene-platinium bloc-mecene-gold">
+
+                    <a class="modal-trigger" href="#modal-mecene-gold" data-target-slide="5" data-target-infos="" data-target-description="&lt;div&gt;&lt;strong&gt;Interactifs accompagne des milliers de professionnels à être plus libres, plus directs et plus respectueux dans leurs échanges quotidiens. Pour cela, il faut de l’engagement, du respect et du courage – comme au Rugby.&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;Interactifs est un cabinet de formation, de coaching et de conseil spécialisé dans le développement de l’intelligence relationnelle. Nous avons créé une démarche unique et brevetée, la Discipline Interactifs©1. Elle se caractérise par sa vision originale de ce que doit être une relation interpersonnelle, par l&#039;efficacité de son approche pédagogique (mélange de coaching et de formation) et par sa pertinence transculturelle. Notre fierté est d’être reconnus comme un expert de référence en matière de développement de l&#039;intelligence relationnelle et de pouvoir servir nos clients en langue locale dans toutes les grandes économies du monde.&lt;br&gt;&lt;br&gt;Retrouvez nous sur &lt;a href=_http_/www.interactifs.fr__www.interactifs.fr_/a__strong_%26nbsp%3b_/strong__/div__.html data-target-name="Interactifs">
+                        <div class="mecene-platinium-img"><img src="uploads/images/interactifs-company-logo-61aa4bc312fd2721318527.png" alt="interactifs-company-logo-61aa4bc312fd2721318527.png"/></div>
+                                            </a>
+                    
+                </div>
+
+                                                                        
+</div>            
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="ribbon-title ribbon-large"><i class="icon-trophy"></i>Mécènes silver</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+
+                    <div class="mecene-silver-wrapper">
+                    
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/2019-06-logo-athlance-605b5499e675b792902353.png" alt="2019-06-logo-athlance-605b5499e675b792902353.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/2019-06-logo-frayssinet-605b54ae33f9c615500613.png" alt="2019-06-logo-frayssinet-605b54ae33f9c615500613.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/2019-06-logo-imhitel-605b54b318adb772467242.png" alt="2019-06-logo-imhitel-605b54b318adb772467242.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/2019-08-logo-agilis-1-605b54b90b191285436432.png" alt="2019-08-logo-agilis-1-605b54b90b191285436432.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/2019-08-logo-barazer-1-605b54be8b583141940444.png" alt="2019-08-logo-barazer-1-605b54be8b583141940444.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/2019-08-logo-broutin-tp-605b54ca0a2c8611249933.png" alt="2019-08-logo-broutin-tp-605b54ca0a2c8611249933.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/2019-08-logo-tprn-2-605b54d260c06613354298.png" alt="2019-08-logo-tprn-2-605b54d260c06613354298.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/2019-09-logo-volkswagen-2-605b54d760ada761971234.png" alt="2019-09-logo-volkswagen-2-605b54d760ada761971234.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/aau-2019-1-605b54dd1e6ae423566643.png" alt="aau-2019-1-605b54dd1e6ae423566643.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/catella-evaluation-605b54e299b23592109356.jpg" alt="catella-evaluation-605b54e299b23592109356.jpg"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/intercontinental-605b54e9da1df252145439.png" alt="intercontinental-605b54e9da1df252145439.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/muller-tp-605b54eee1785819255742.jpg" alt="muller-tp-605b54eee1785819255742.jpg"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/puressentiel-605b54f4a8b07978134355.jpg" alt="puressentiel-605b54f4a8b07978134355.jpg"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/serviceplan-605b54f966398181843711.png" alt="serviceplan-605b54f966398181843711.png"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/takeoff-605b54fe2d5db873605239.jpg" alt="takeoff-605b54fe2d5db873605239.jpg"/>
+                            </div>
+
+                        
+                            <div class="mecene-silver-item">
+                                <img src="uploads/images/logo-systemsa-60672a4b76704708751166.png" alt="logo-systemsa-60672a4b76704708751166.png"/>
+                            </div>
+
+                                            </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container" style="padding-bottom : 50px;">
+
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="ribbon-title ribbon-large ribbon-blue">MERCI ÉGALEMENT À NOS DONATEURS : </h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col s12">
+                                            <b>Alexis Karklins</b> -                                             <b>Jean-Louis Louvel</b> -                                             <b>Algest</b> -                                             <b>Apef</b>                                     </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+
+        </main>
+
+        <a href="mailto:contact@rugbyaucoeur.fr" id="fixed-email" class="fixed-email-hidden"><i class="material-icons">email</i><span>contact@rugbyaucoeur.fr</span></a>
+            
+        <footer id="footer" class="page-footer">
+  <div class="container">
+    <div class="row footer-logos">
+      <div class="col s12 l4 footer-logo">
+        <img src="img/RUGBYCOEUR_LOGO_STA_SC_WHITE_RGB.png" />
+      </div>
+      <div class="col s12 l8 footer-logo2">
+        <img src="img/RUGBYCOEUR_Header.png" />
+      </div>
+    </div>
+
+    <div class="row footer-actions">
+      <div class="col s12">
+        <div class="footer-actions-title">Une question ?</div>
+        <div>
+          <a href="faq.html" class="btn btn-transparent btn-large">Voir la faq</a>
+          <a href="mailto:contact@rugbyaucoeur.fr" class="btn btn-light btn-large">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col l4 s12"><div class="menu-title">À propos</div>
+<ul class="menu">
+            <li><a href="index.html" >Accueil</a></li>
+            <li><a href="ladn-de-rugby-au-coeur.html" >L&#039;ADN de Rugby au Cœur</a></li>
+            <li><a href="nos-actualites.html" >Nos actualités</a></li>
+            <li><a href="mentions-legales.html" target="_blank">Mentions légales</a></li>
+            <li><a href="reglement-jeu-concours.html" target="_blank">Règlement</a></li>
+    </ul></div>
+
+      <div class="col l4 s12"><div class="menu-title">La plateforme</div>
+<ul class="menu">
+            <li><a href="deposer-un-projet.html" >Déposer un projet</a></li>
+            <li><a href="projets.html" >Liste des projets</a></li>
+            <li><a href="devenir-mecene.html" >Devenir mécène</a></li>
+            <li><a href="mecenes.html" >Liste des mécènes</a></li>
+            <li><a href="don.html" >Faire un don</a></li>
+    </ul></div>
+
+      <div class="col xl4 s12 footer-infos">
+        <div>
+          Le site <a href="#">www.rugbyaucoeur.fr</a> est édité par le Fonds de dotation Rugby au Cœur
+        </div>
+        <div>
+          <br />24 rue Saint Victor
+        </div>
+        <div>75005 Paris, FRANCE</div>
+        <div>
+          <a href="mailto:contact@rugbyaucoeur.fr"><b>contact@rugbyaucoeur.fr</b></a>
+        </div>
+        <div>
+          <br />Directeur de la Publication :
+        </div>
+        <div>M. Julien COLLETTE</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">© 2023 Rugby au Cœur</div>
+  </div>
+</footer>
+
+        <div class="cookie-hidden" id="cookie-banner">
+    <div>
+         <span>Ce site utilise des cookies afin d'améliorer votre expérience utilisateur. En continuant, vous acceptez l'utilisation de cookies.</span>
+         <i id="consent-cookies" class="icon-close"></i>
+    </div>
+</div>
+        <script src="../code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="js/main.js"></script>
+            <script src="js/modal-mecene-gold.js"></script>
+
+    </body>
+
+<!-- Mirrored from rugbyaucoeur.fr/mecenes by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Oct 2023 09:44:06 GMT -->
+</html>
